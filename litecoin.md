@@ -89,7 +89,7 @@ sudo supervisorctl reread;sudo supervisorctl update; sudo supervisorctl restart 
 ```
 pip3 install zmq
 ```
-## create zmq.py
+## create zmq_sub.py
 ```
 nano /home/michaelphan/.config/zmq_sub.py
 ```
@@ -97,7 +97,7 @@ nano /home/michaelphan/.config/zmq_sub.py
 
 ```
 [program:zmq]
-command=python3 /home/ubuntu/.config/zmq_sub.py
+command=python3 /home/michaelphan/.config/zmq_sub.py
 user=michaelphan
 autostart=true
 autorestart=true

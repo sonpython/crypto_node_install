@@ -11,10 +11,10 @@ sudo apt-get install build-essential libtool autotools-dev automake pkg-config l
 sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev software-properties-common python3-pip
 ```
 
-## install bitcoind
+## install bitcoincash
 
 ```
-sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get install software-properties-common -y;sudo add-apt-repository ppa:bitcoin-abc/ppa;sudo apt-get update -y
 
 sudo apt-get update
 
@@ -36,8 +36,8 @@ nano bitcoind.conf
 
 #### bitcoind.conf content
 ```
-rpcuser=bitcoin_mainnet
-rpcpassword=bitcoin_mainnetbitcoin_mainnet
+rpcuser=bitcoincash_testnet
+rpcpassword=bitcoincash_testnetbitcoincash_testnet
 testnet=1
 rpcport=8332
 rpcallowip=0.0.0.0/0
