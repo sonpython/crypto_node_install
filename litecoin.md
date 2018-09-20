@@ -1,3 +1,10 @@
+## Instance Specs
+```
+OS: Ubuntu 18-04 LTS
+Disk size: 50Gb
+RAM: 8Gb
+CPU: 2Cores
+```
 ## install utils + update system
 
 ```
