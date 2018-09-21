@@ -80,7 +80,7 @@ sudo nano /etc/supervisor/conf.d/litecoind.conf
 #### litecoind.conf supervisor content
 ```
 [program:litecoind]
-command=/usr/bin/bitcoind -maxconnections=500 -conf=/home/michaelphan/.config/litecoind.conf -datadir=/home/michaelphan/.config/
+command=/usr/bin/litecoind -maxconnections=500 -conf=/home/michaelphan/.config/litecoind.conf -datadir=/home/michaelphan/.config/
 user=michaelphan
 autostart=true
 autorestart=true
