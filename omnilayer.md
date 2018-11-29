@@ -26,6 +26,25 @@ git clone https://github.com/OmniLayer/omnicore.git
 cd omnicore/
 ./autogen.sh
 ./configure --with-incompatible-bdb
+make
+```
+
+#### update on November 30th to support Omni Core v0.3.1
+```
+sudo supervisorctl stop omni
+
+cd /home/ubuntu/omni/omnicore/
+
+git pull
+
+./autogen.sh
+
+./configure --with-incompatible-bdb
+
+make
+
+sudo supervisorctl start omni
+
 ```
 
 ## install supervisor
