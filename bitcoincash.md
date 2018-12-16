@@ -21,12 +21,41 @@ sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono
 ## install bitcoincash
 
 ```
-sudo apt-get install software-properties-common -y;sudo add-apt-repository ppa:bitcoin-abc/ppa;sudo apt-get update -y
+sudo apt-get install software-properties-common -y;sudo add-apt-repository ppa:bitcoin-abc/ppa
 
 sudo apt-get update
 
 sudo apt-get install bitcoind
 ```
+
+#### update on November 15th to support Bitcoincash Hard Fork
+* To Support Bitcoin Cash ABC | Bitcoin ABC:0.18.5
+```
+sudo supervisorctl stop bitcoind
+
+sudo apt-get install software-properties-common -y;sudo add-apt-repository ppa:bitcoin-abc/ppa
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo supervisorctl start bitcoind
+
+```
+check bitcoind version
+```
+bitcoin-cli -conf=/home/ubuntu/.bitcoin/bitcoind.conf getnetworkinfo
+
+......
+{
+  "version": 180500,
+  "subversion": "/Bitcoin ABC:0.18.5(EB32.0)/",
+  "protocolversion": 70015,
+  ...
+ }
+
+```
+
 
 ## install supervisor
 
